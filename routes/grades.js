@@ -73,7 +73,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// Update a score to a grade entry
+// adding a score to a grade entry
 router.patch("/:id/add", async (req, res) => {
   try {
     const result = await grade.findOneAndUpdate(
